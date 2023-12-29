@@ -12,4 +12,4 @@ conn.request("GET", "/titles/search/title/Iron%20Man?exact=false&info=base_info&
 res = conn.getresponse()
 data = res.read()
 
-print(data.decode("utf-8"))
+print(data.decode("utf-8")) 123
