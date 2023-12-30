@@ -1,0 +1,257 @@
+{
+    "page": 1,
+    "next": null,
+    "entries": 3,
+    "results": [
+        {
+            "_id": "61e5844d909c2ca781420787",
+            "id": "tt0371746",
+            "ratingsSummary": {
+                "aggregateRating": 7.9,
+                "voteCount": 1107674,
+                "__typename": "RatingsSummary"
+            },
+            "episodes": null,
+            "primaryImage": {
+                "id": "rm1544850432",
+                "width": 1382,
+                "height": 2048,
+                "url": "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_.jpg",
+                "caption": {
+                    "plainText": "Jeff Bridges, Robert Downey Jr., Gwyneth Paltrow, Leslie Bibb, Terrence Howard, Sayed Badreya, Paul Bettany, Peter Billingsley, Clark Gregg, Bill Smitrovich, Faran Tahir, and Shaun Toub in Iron Man (2008)",
+                    "__typename": "Markdown"
+                },
+                "__typename": "Image"
+            },
+            "titleType": {
+                "text": "Movie",
+                "id": "movie",
+                "isSeries": false,
+                "isEpisode": false,
+                "__typename": "TitleType"
+            },
+            "genres": {
+                "genres": [
+                    {
+                        "text": "Action",
+                        "id": "Action",
+                        "__typename": "Genre"
+                    },
+                    {
+                        "text": "Adventure",
+                        "id": "Adventure",
+                        "__typename": "Genre"
+                    },
+                    {
+                        "text": "Sci-Fi",
+                        "id": "Sci-Fi",
+                        "__typename": "Genre"
+                    }
+                ],
+                "__typename": "Genres"
+            },
+            "titleText": {
+                "text": "Iron Man",
+                "__typename": "TitleText"
+            },
+            "originalTitleText": {
+                "text": "Iron Man",
+                "__typename": "TitleText"
+            },
+            "releaseYear": {
+                "year": 2008,
+                "endYear": null,
+                "__typename": "YearRange"
+            },
+            "releaseDate": {
+                "day": 1,
+                "month": 5,
+                "year": 2008,
+                "__typename": "ReleaseDate"
+            },
+            "runtime": {
+                "seconds": 7560,
+                "__typename": "Runtime"
+            },
+            "series": null,
+            "meterRanking": {
+                "currentRank": 182,
+                "rankChange": {
+                    "changeDirection": "UP",
+                    "difference": 12,
+                    "__typename": "MeterRankChange"
+                },
+                "__typename": "TitleMeterRanking"
+            },
+            "plot": {
+                "plotText": {
+                    "plainText": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+                    "__typename": "Markdown"
+                },
+                "language": {
+                    "id": "en-US",
+                    "__typename": "DisplayableLanguage"
+                },
+                "__typename": "Plot"
+            }
+        },
+        {
+            "_id": "61e5808be1a8ddbd96413c3f",
+            "id": "tt0043678",
+            "ratingsSummary": {
+                "aggregateRating": 6.3,
+                "voteCount": 262,
+                "__typename": "RatingsSummary"
+            },
+            "episodes": null,
+            "primaryImage": {
+                "id": "rm2541554944",
+                "width": 1856,
+                "height": 2800,
+                "url": "https://m.media-amazon.com/images/M/MV5BMmVjZGY2ZjUtYTQ2MC00OWNkLWFiNDctOWVmM2RjM2VjNzRmXkEyXkFqcGdeQXVyMDI2NDg0NQ@@._V1_.jpg",
+                "caption": {
+                    "plainText": "Jeff Chandler, Evelyn Keyes, and Stephen McNally in Iron Man (1951)",
+                    "__typename": "Markdown"
+                },
+                "__typename": "Image"
+            },
+            "titleType": {
+                "text": "Movie",
+                "id": "movie",
+                "isSeries": false,
+                "isEpisode": false,
+                "__typename": "TitleType"
+            },
+            "genres": {
+                "genres": [
+                    {
+                        "text": "Drama",
+                        "id": "Drama",
+                        "__typename": "Genre"
+                    },
+                    {
+                        "text": "Film-Noir",
+                        "id": "Film-Noir",
+                        "__typename": "Genre"
+                    },
+                    {
+                        "text": "Sport",
+                        "id": "Sport",
+                        "__typename": "Genre"
+                    }
+                ],
+                "__typename": "Genres"
+            },
+            "titleText": {
+                "text": "Iron Man",
+                "__typename": "TitleText"
+            },
+            "originalTitleText": {
+                "text": "Iron Man",
+                "__typename": "TitleText"
+            },
+            "releaseYear": {
+                "year": 1951,
+                "endYear": null,
+                "__typename": "YearRange"
+            },
+            "releaseDate": {
+                "day": 20,
+                "month": 9,
+                "year": 1951,
+                "__typename": "ReleaseDate"
+            },
+            "runtime": {
+                "seconds": 4920,
+                "__typename": "Runtime"
+            },
+            "series": null,
+            "meterRanking": null,
+            "plot": {
+                "plotText": {
+                    "plainText": "An ambitious coal miner is talked into becoming a boxer by his gambler brother.",
+                    "__typename": "Markdown"
+                },
+                "language": {
+                    "id": "en-US",
+                    "__typename": "DisplayableLanguage"
+                },
+                "__typename": "Plot"
+            }
+        },
+        {
+            "_id": "61e5803dd735dff3f9412e1d",
+            "id": "tt0022002",
+            "ratingsSummary": {
+                "aggregateRating": 5.8,
+                "voteCount": 335,
+                "__typename": "RatingsSummary"
+            },
+            "episodes": null,
+            "primaryImage": {
+                "id": "rm2512525056",
+                "width": 645,
+                "height": 900,
+                "url": "https://m.media-amazon.com/images/M/MV5BOTc1MDMyZDctMTFjNi00ZDkwLWFhNzQtOWE3MWFkYjEyZjFiXkEyXkFqcGdeQXVyMjUxODE0MDY@._V1_.jpg",
+                "caption": {
+                    "plainText": "Lew Ayres and Jean Harlow in Iron Man (1931)",
+                    "__typename": "Markdown"
+                },
+                "__typename": "Image"
+            },
+            "titleType": {
+                "text": "Movie",
+                "id": "movie",
+                "isSeries": false,
+                "isEpisode": false,
+                "__typename": "TitleType"
+            },
+            "genres": {
+                "genres": [
+                    {
+                        "text": "Drama",
+                        "id": "Drama",
+                        "__typename": "Genre"
+                    }
+                ],
+                "__typename": "Genres"
+            },
+            "titleText": {
+                "text": "Iron Man",
+                "__typename": "TitleText"
+            },
+            "originalTitleText": {
+                "text": "Iron Man",
+                "__typename": "TitleText"
+            },
+            "releaseYear": {
+                "year": 1931,
+                "endYear": null,
+                "__typename": "YearRange"
+            },
+            "releaseDate": {
+                "day": 30,
+                "month": 4,
+                "year": 1931,
+                "__typename": "ReleaseDate"
+            },
+            "runtime": {
+                "seconds": 4380,
+                "__typename": "Runtime"
+            },
+            "series": null,
+            "meterRanking": null,
+            "plot": {
+                "plotText": {
+                    "plainText": "Prizefighter Mason loses his opening fight so wife Rose leaves him for Hollywood. Without her around Mason trains and starts winning. Rose comes back and wants Mason to dump his manager Regan and replace him with her secret lover Lewis.",
+                    "__typename": "Markdown"
+                },
+                "language": {
+                    "id": "en-US",
+                    "__typename": "DisplayableLanguage"
+                },
+                "__typename": "Plot"
+            }
+        }
+    ]
+}

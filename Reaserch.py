@@ -16,7 +16,7 @@ def finderCall():
     res = conn.getresponse()
     data = res.read()
 
-    with open(os.path.dirname(__file__) + '\dataFromURL.json','w') as f_json:    
+    with open(os.path.dirname(__file__) + '/dataFromURL.json','w') as f_json:    
         f_json.write(data.decode("utf-8"))
         f_json.write("\n")
     f_json.close()
@@ -26,7 +26,7 @@ def getValuesFromJSON():
 
     # Opening JSON file
     # UPDATE the abs path using os.path.abspath("data.json")
-    f = open(os.path.dirname(__file__) + ("\dataFromURL.json"))
+    f = open(os.path.dirname(__file__) + ("/dataFromURL.json"))
     
     # returns JSON object as 
     # a dictionary
@@ -43,8 +43,4 @@ def getValuesFromJSON():
 
 
 #finderCall()
-getValuesFromJSON()
-
-print(os.getcwd())
-
-
+getValuesFromJSON() 
