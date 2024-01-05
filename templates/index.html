@@ -1,0 +1,23 @@
+<!doctype html>
+<head>
+<title>Movie filter!</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar"> </div>
+        <div class="content">
+            <h2>FIND YOUR MOVIE</h2>
+            <p>
+                <h6>Hey there! Need recommendations on what to watch? 
+                    <br> Don't worry we got you covered, press the button to find your new favourite movie.
+                </h6>
+            </p>
+            <div>
+                <form action="{{ url_for('search') }}" method="POST">
+                    <input type="submit" value="Start Now">
+                </form>
+            </div>
+        </div>
+    </div>
+</body> 

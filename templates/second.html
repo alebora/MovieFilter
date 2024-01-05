@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+<title>Movie filter!</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+</head>
+<body>
+    <div>
+    <form method="POST">
+    </div>
+    <ul>
+        <li>
+            <h4><a href="#">Type
+            </a>
+            <ul class="dropdown">
+                    <li>
+                        <a href="#">Movie</a>
+                    </li>
+                    <li>
+                        <a href="#">Series</a>
+                    </li>
+                    <li>
+                        <a href="#">Any</a>
+                    </li>               
+            </ul>
+            </h4>
+        </li>
+    </ul>
+    </div>
+    <h3>Please Enter:{{ str }}</h3>
+    <div>
+            <input name="text">
+            <input type="submit">
+    </div>
+    </form>
+</body>
