@@ -15,30 +15,32 @@ def search():
 
 @app.route("/search", methods=['POST'])
 def search_post():
-    str = request.form['text']
+    str = request.form['text'] 
+    select = request.form['selection']
     if str != "":
-        result = finderCall(str)
-        if result["results"]:
+        result = finderCall(str, select)
+        result = [item for item in result["results"] if item['ratingsSummary']['voteCount'] > 100000]
+        if result:
             return render_template("second.html", jsonObj = result, start = 0)
         else:
             return render_template("second.html", jsonObj = "", start = 0)
     else:
         return render_template("second.html", jsonObj = "", start = 0)
 
-def finderCall(str):
+def finderCall(str, select):
     conn = http.client.HTTPSConnection("moviesdatabase.p.rapidapi.com")
 
     headers = {
         'X-RapidAPI-Key': "8bf0871ea3msh8bbb7d0dd036a04p15f9cajsn0e547477cf42",
         'X-RapidAPI-Host': "moviesdatabase.p.rapidapi.com"
     }
-    conn.request("GET", "/titles/search/title/" + str.replace(" ", "%20") + "?exact=false&info=base_info&titleType=movie", headers=headers)
+    conn.request("GET", "/titles/search/title/" + str.replace(" ", "%20") + "?exact=false&info=base_info&titleType=" + select + "&limit=50", headers=headers)
 
     res = conn.getresponse()
     data = res.read()
 
+
     return json.loads(data.decode("utf-8"))
-    
 
 if __name__ == "__main__":
     app.run()

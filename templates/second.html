@@ -5,31 +5,22 @@
 </head>
 <body>
     <div>
+        <h2>Movie Filter</h2>
+    </div>
     <form method="POST">
-    </div>
-    <ul>
-        <li>
-            <h4><a href="#">Type
-            </a>
-            <ul class="dropdown">
-                    <li>
-                        <a href="#">Movie</a>
-                    </li>
-                    <li>
-                        <a href="#">Series</a>
-                    </li>
-                    <li>
-                        <a href="#">Any</a>
-                    </li>               
-            </ul>
-            </h4>
-        </li>
-    </ul>
-    </div>
-    <h3>Please Enter:{{ str }}</h3>
-    <div>
+        <h3>Select Type:</h3>
+        <div class="form-control">
+        <div class="dropdown" name="selection">
+            <select name="selection">
+                <option value="movie">Movie</option>
+                <option value="series">Series</option>
+            </select>   
+        </div>  
+        <div>      
+            <h3>Enter Title:</h3>
             <input name="text">
             <input type="submit">
+        </div>
     </div>
     </form>
     <ul>
@@ -39,12 +30,34 @@
                     <h6>No results found, please try a different input.</h6>
                 </p>
             {% else %}
-                {% for item in jsonObj["results"] %} 
-                    {% if item['primaryImage']['url'] != null %}
-                    <li><img src="{{ item['primaryImage']['url'] }}" alt="{{ item['titleText']['text'] }}"></li>
+                {% set count = namespace(value=1) %} 
+                {% for item in jsonObj %} 
+                    {% if (count.value - 1)%9 == 0 %}
+                        <div class="row"> <div class="column"> 
                     {% else %}
-                    <li><img src="{{ url_for('static', filename='background.jpeg') }}" alt="{{ item['titleText']['text'] }}"></li>
+                        <div class="column"> 
                     {% endif %}
+                    {% if item['primaryImage']['url'] != null %}
+                        <li><img src="{{ item['primaryImage']['url'] }}" alt="{{ item['titleText']['text'] }}"></li>
+                    {% else %}
+                        <li><img src="{{ url_for('static', filename='no-image.png') }}" alt="{{ item['titleText']['text'] }}"></li>
+                    {% endif %}
+                    <p>
+                        <h5>{{ item['titleText']['text'] }}</h5>
+                        <font size="-2"><br><b>Rating:</b> {{ item['ratingsSummary']['aggregateRating'] }}
+                        <br><b>Release year:</b> {{ item['releaseYear']['year'] }}
+                        <p class="smalltext">
+                        <br><b>Description:</b>
+                    {% if item['plot'] != None %} 
+                        {{ item['plot']['plotText']['plainText'] }}
+                    {% endif %}
+                    </font></p></p>
+                    {% if count.value%9 == 0 and count.value > 0 %}
+                        </div> </div>
+                    {% else %}
+                        </div>
+                    {% endif %}
+                    {% set count.value = count.value + 1 %}
                 {% endfor %}
             {% endif %}
         {% endif %}
