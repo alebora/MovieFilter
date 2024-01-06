@@ -32,4 +32,21 @@
             <input type="submit">
     </div>
     </form>
+    <ul>
+        {% if start == 0 %}
+            {% if jsonObj == "" %}
+                <p>
+                    <h6>No results found, please try a different input.</h6>
+                </p>
+            {% else %}
+                {% for item in jsonObj["results"] %} 
+                    {% if item['primaryImage']['url'] != null %}
+                    <li><img src="{{ item['primaryImage']['url'] }}" alt="{{ item['titleText']['text'] }}"></li>
+                    {% else %}
+                    <li><img src="{{ url_for('static', filename='background.jpeg') }}" alt="{{ item['titleText']['text'] }}"></li>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        {% endif %}
+    </ul>
 </body>

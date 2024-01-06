@@ -45,3 +45,8 @@ ul li a:hover {
 ul li:hover ul.dropdown {
     display: block;
 }
+img{
+    width: 100px;
+    height: 150px;
+    
+}

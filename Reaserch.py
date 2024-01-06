@@ -41,6 +41,5 @@ def getValuesFromJSON():
     f.close()
 
 
-
 #finderCall()
 getValuesFromJSON() 
