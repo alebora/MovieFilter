@@ -6,6 +6,10 @@
 h2{
     text-align: center;
 }
+h5{
+    text-align: center;
+    background-color: #fff;
+}
 .form-control{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -32,7 +36,7 @@ h2{
 }
 ul {
     list-style: none;
-    background: #22438C;
+    background: #fff;
 }
 .smalltext {
     line-height: 0.75em;
@@ -54,13 +58,13 @@ ul li ul.dropdown li{
 }
 ul li ul.dropdown {
     width: 100%;
-    background: #22438C;
+    background: #fff;
     position: absolute;
     z-index: 999;
     display: none;
 }
 ul li a:hover {
-    background: #112C66;
+    background: #fff;
 }
 ul li:hover ul.dropdown {
     display: block;
