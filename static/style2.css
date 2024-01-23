@@ -29,9 +29,7 @@ h5{
     display: flex;
     align-content: center;
     justify-content: center;
-
 }
-
 ul {
     list-style: none;
     background: rgba(138, 89, 178, 0.791);
