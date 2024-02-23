@@ -3,7 +3,7 @@ import http.client
 import json
 
 app = Flask(__name__)    
-searchDict = {}
+searchDict = {}   
 
 @app.route("/", methods=['GET', 'POST'] )       
 def root():
