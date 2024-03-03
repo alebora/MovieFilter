@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 import http.client
 import json
 
-app = Flask(__name__)    
+app = Flask(__name__)        
 searchDict = {}   
    
 @app.route("/", methods=['GET', 'POST'] )                  
