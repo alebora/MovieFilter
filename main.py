@@ -12,7 +12,7 @@ def root():
 @app.route("/search")          
 def search():  
     return render_template("second.html", jsonObj = "", start = 1)      
-       
+          
 @app.route("/search", methods=['POST'])            
 def search_post():   
     str = request.form['text']   
@@ -31,6 +31,7 @@ def finderCall(str, select):
     conn = http.client.HTTPSConnection("moviesdatabase.p.rapidapi.com")
 
     headers = {
+        ##API used:
         'X-RapidAPI-Key': "8bf0871ea3msh8bbb7d0dd036a04p15f9cajsn0e547477cf42",
         'X-RapidAPI-Host': "moviesdatabase.p.rapidapi.com"
     }
