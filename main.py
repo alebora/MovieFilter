@@ -26,7 +26,7 @@ def search_post():
             return render_template("second.html", jsonObj = "", start = 0)
     else:
         return render_template("second.html", jsonObj = "", start = 0)
-       
+          
 def finderCall(str, select):
     conn = http.client.HTTPSConnection("moviesdatabase.p.rapidapi.com")
    
