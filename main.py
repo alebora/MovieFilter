@@ -12,7 +12,7 @@ def root():
 @app.route("/search")          
 def search():     
     return render_template("second.html", jsonObj = "", start = 1)         
-                                                                                                                                  
+                                                                                                                                          
 @app.route("/search", methods=['POST'])            
 def search_post():   
     str = request.form['text']   
@@ -26,7 +26,7 @@ def search_post():
             return render_template("second.html", jsonObj = "", start = 0)
     else:
         return render_template("second.html", jsonObj = "", start = 0)
-              
+                   
 def finderCall(str, select):
     conn = http.client.HTTPSConnection("moviesdatabase.p.rapidapi.com")
    
