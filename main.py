@@ -34,7 +34,7 @@ def finderCall(str, select):
         ##API used:
         'X-RapidAPI-Key': "8bf0871ea3msh8bbb7d0dd036a04p15f9cajsn0e547477cf42",
         'X-RapidAPI-Host': "moviesdatabase.p.rapidapi.com"
-    }
+    }    
     conn.request("GET", "/titles/search/title/" + str.replace(" ", "%20") + "?exact=false&info=base_info&titleType=" + select + "&limit=50", headers=headers)
 
     res = conn.getresponse()
