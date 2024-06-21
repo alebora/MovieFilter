@@ -27,7 +27,7 @@ def search_post():
     else:
         return render_template("second.html", jsonObj = "", start = 0)
                        
-def finderCall(str, select):
+def finderCall(str, select):    
     conn = http.client.HTTPSConnection("moviesdatabase.p.rapidapi.com")
    
     headers = {      
