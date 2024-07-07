@@ -22,7 +22,7 @@ def search_post():
         result = [item for item in result["results"] if item['ratingsSummary']['voteCount'] > 100000]
         if result:
             return render_template("second.html", jsonObj = result, start = 0)
-        else:
+        else:   
             return render_template("second.html", jsonObj = "", start = 0)
     else:
         return render_template("second.html", jsonObj = "", start = 0)
