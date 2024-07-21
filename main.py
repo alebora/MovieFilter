@@ -8,7 +8,7 @@ searchDict = {}
 @app.route("/", methods=['GET', 'POST'] )                  
 def root():               
     return render_template("index.html")          
-                             
+                                
 @app.route("/search")             
 def search():         
     return render_template("second.html", jsonObj = "", start = 1)                      
