@@ -13,7 +13,7 @@ def root():
 def search():         
     return render_template("second.html", jsonObj = "", start = 1)                      
                                                                                                                                                            
-@app.route("/search", methods=['POST'])                 
+@app.route("/search", methods=['POST'])                    
 def search_post():              
     str = request.form['text']     
     select = request.form['selection']                   
