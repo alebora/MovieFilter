@@ -9,7 +9,7 @@ searchDict = {}
 def root():               
     return render_template("index.html")                           
                                 
-@app.route("/search")                                            
+@app.route("/search")                                                
 def search():         
     return render_template("second.html", jsonObj = "", start = 1)                      
                                                                                                                                                            
@@ -30,7 +30,7 @@ def search_post():
 def finderCall(str, select):    
     conn = http.client.HTTPSConnection("moviesdatabase.p.rapidapi.com")
    
-    headers = {                     
+    headers = {                       
         ##API used:       
         'X-RapidAPI-Key': "8bf0871ea3msh8bbb7d0dd036a04p15f9cajsn0e547477cf42",
         'X-RapidAPI-Host': "moviesdatabase.p.rapidapi.com"
