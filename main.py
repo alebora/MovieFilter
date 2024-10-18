@@ -7,7 +7,7 @@ searchDict = {}
    
 @app.route("/", methods=['GET', 'POST'] )                       
 def root():               
-    return render_template("index.html")                           
+    return render_template("index.html")                             
                                 
 @app.route("/search")                                                  
 def search():         
