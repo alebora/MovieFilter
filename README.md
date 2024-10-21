@@ -1,6 +1,6 @@
 ## Movie Filter Project
 
-### Table of Contents           
+### Table of Contents            
 * [Introduction](#Introduction)
 * [Installation](#Installation)
 * [Description](#Description) 
