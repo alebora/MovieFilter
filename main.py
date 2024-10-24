@@ -9,15 +9,15 @@ searchDict = {}
 def root():               
     return render_template("index.html")                              
                                 
-@app.route("/search")                                                      
-def search():         
+@app.route("/search")                                                       
+def search():           
     return render_template("second.html", jsonObj = "", start = 1)                      
                                                                                                                                                            
 @app.route("/search", methods=['POST'])                              
 def search_post():              
     str = request.form['text']     
     select = request.form['selection']                            
-    if str != "":                 
+    if str != "":                   
         result = finderCall(str, select)  
         result = [item for item in result["results"] if item['ratingsSummary']['voteCount'] > 100000]   
         if result:
