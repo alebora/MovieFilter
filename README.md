@@ -5,7 +5,7 @@
 * [Installation](#Installation)
 * [Description](#Description) 
 
-### Introduction             
+### Introduction                
 Movie Filter is a project to suggest various movies/series based on the search criteria inputted by the user. 
   
 ### Installation 
