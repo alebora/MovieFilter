@@ -10,7 +10,7 @@ def root():
     return render_template("index.html")                              
                                 
 @app.route("/search")                                                           
-def search():                     
+def search():                       
     return render_template("second.html", jsonObj = "", start = 1)                      
                                                                                                                                                            
 @app.route("/search", methods=['POST'])                              
