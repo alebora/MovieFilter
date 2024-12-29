@@ -11,7 +11,8 @@ def root():
                                   
 @app.route("/search")                                                                          
 def search():                             
-    return render_template("second.html", jsonObj = "", start = 1)                      
+    return render_template("second.html", jsonObj = "", start = 1) 
+    #return render_template("tempsecond.html", jsonObj = "", start = 1)                                           
                                                                                                                                                              
 @app.route("/search", methods=['POST'])                              
 def search_post():              
@@ -22,10 +23,13 @@ def search_post():
         result = [item for item in result["results"] if item['ratingsSummary']['voteCount'] > 100000]   
         if result:
             return render_template("second.html", jsonObj = result, start = 0)
+            #return render_template("tempsecond.html", jsonObj = result, start = 0)
         else:   
             return render_template("second.html", jsonObj = "", start = 0)
+            #return render_template("tempsecond.html", jsonObj = "", start = 0)
     else:
         return render_template("second.html", jsonObj = "", start = 0)
+        #return render_template("tempsecond.html", jsonObj = "", start = 0)
                                 
 def finderCall(str, select):    
     conn = http.client.HTTPSConnection("moviesdatabase.p.rapidapi.com")
@@ -37,12 +41,12 @@ def finderCall(str, select):
     }    
     conn.request("GET", "/titles/search/title/" + str.replace(" ", "%20") + "?exact=false&info=base_info&titleType=" + select + "&limit=50", headers=headers)
 
-    res = conn.getresponse()
+    res = conn.getresponse()  
     data = res.read()
 
 
     return json.loads(data.decode("utf-8"))
-
+  
 if __name__ == "__main__":
     app.run()
 
