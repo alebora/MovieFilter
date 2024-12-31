@@ -27,7 +27,7 @@ def search_post():
         else:   
             return render_template("second.html", jsonObj = "", start = 0)
             #return render_template("tempsecond.html", jsonObj = "", start = 0)
-    else:
+    else:  
         return render_template("second.html", jsonObj = "", start = 0)
         #return render_template("tempsecond.html", jsonObj = "", start = 0)
                                 
