@@ -21,7 +21,7 @@ def search_post():
     if str != "":                     
         result = finderCall(str, select)  
         result = [item for item in result["results"] if item['ratingsSummary']['voteCount'] > 100000]   
-        if result:    
+        if result:      
             return render_template("second.html", jsonObj = result, start = 0)
             #return render_template("tempsecond.html", jsonObj = result, start = 0)
         else:   
