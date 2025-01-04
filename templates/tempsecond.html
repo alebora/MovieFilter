@@ -36,13 +36,13 @@
     <div class="row"> <div class="column">   
                     {% else %}
         <div class="column">   
-                    {% endif %}
+                    {% endif %} 
                     {% if item['primaryImage']['url'] != null %}
                         <li><img src="{{ item['primaryImage']['url'] }}" alt="{{ item['titleText']['text'] }}"></li>
                     {% else %}
                         <li><img src="{{ url_for('static', filename='no-image.png') }}" alt="{{ item['titleText']['text'] }}"></li>
                     {% endif %}
-                    <p>
+                    <p>  
                         <h5>{{ item['titleText']['text'] }}</h5>  
                         <font size="-2"><br><b>Rating:</b> {{ item['ratingsSummary']['aggregateRating'] }}
                         <br><b>Release year:</b> {{ item['releaseYear']['year'] }}
