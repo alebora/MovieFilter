@@ -43,7 +43,7 @@ select, input[type="text"] {
     font-size: 1rem;     
 }
 
-button {  
+button {    
     background: #ff7f50;
     color: #fff;
     border: none;
