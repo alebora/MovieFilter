@@ -11,7 +11,7 @@
                 "voteCount": 1107674,
                 "__typename": "RatingsSummary"
             },         
-            "episodes": null,
+            "episodes": null,  
             "primaryImage": {
                 "id": "rm1544850432",
                 "width": 1382,
