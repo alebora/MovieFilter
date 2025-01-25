@@ -15,4 +15,4 @@ $ pip install Flask
 ```                
 
 ### Description
-The user may narrow their search by indicating whether they would like to see movies or series, as well they may also indicate if their word input is the exact title or is a keyword. If the user input is not indicated to be an exact title or a keyword, it will be assumed to be a keyword.      
+The user may narrow their search by indicating whether they would like to see movies or series, as well they may also indicate if their word input is the exact title or is a keyword. If the user input is not indicated to be an exact title or a keyword, it will be assumed to be a keyword.        
