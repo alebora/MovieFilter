@@ -45,7 +45,7 @@ select, input[type="text"] {
 
 button {      
     background: #ff7f50;
-    color: #fff;
+    color: #fff;  
     border: none;
     border-radius: 8px;
     padding: 10px 15px;      
