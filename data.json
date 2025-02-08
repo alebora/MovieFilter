@@ -9,7 +9,7 @@
         "ratingsSummary": {         
           "aggregateRating": 7.9,                   
           "voteCount": 1107674,         
-          "__typename": "RatingsSummary"
+          "__typename": "RatingsSummary"   
         },    
         "episodes": null,    
         "primaryImage": {
