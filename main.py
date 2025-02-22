@@ -16,8 +16,8 @@ def search():
                                                                                                                                                              
 @app.route("/search", methods=['POST'])                              
 def search_post():              
-    str = request.form['text']         
-    select = request.form['selection']                                                           
+    str = request.form['text']           
+    select = request.form['selection']                                                             
     if str != "":                     
         result = finderCall(str, select)         
         result = [item for item in result["results"] if item['ratingsSummary']['voteCount'] > 100000]   
