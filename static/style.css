@@ -47,7 +47,7 @@ h2{
     bottom: 0;
     z-index: -1;
     transition: 0.5s;
- }
+ }  
  button:hover span{
     width: 100%;
  }
