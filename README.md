@@ -1,4 +1,7 @@
 ## Movie Filter Project
+No more time wasting searching for the perfcet movie
+
+<img width="1285" alt="moviefilter" src="https://github.com/alebora/MovieFilter/blob/main/static/movieFilter.png">
 
 ### Table of Contents              
 * [Introduction](#Introduction)
