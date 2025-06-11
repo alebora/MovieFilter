@@ -10,7 +10,7 @@ h5{
     text-align: center;    
     background-color: rgba(138, 89, 178, 0.791);
 }
-.form-control{
+.form-control{   
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }   
