@@ -15,7 +15,7 @@ def search():
     #return render_template("tempsecond.html", jsonObj = "", start = 1)                                           
                                                                                                                                                                    
 @app.route("/search", methods=['POST'])                              
-def search_post():                 
+def search_post():                   
     str = request.form['text']           
     select = request.form['selection']                                                                                 
     if str != "":                     
