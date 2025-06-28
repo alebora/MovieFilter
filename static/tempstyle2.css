@@ -41,7 +41,7 @@ select, input[type="text"] {
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 1rem;     
-}  
+}    
 
 button {      
     background: #ff7f50;      
