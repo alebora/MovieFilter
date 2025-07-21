@@ -16,7 +16,7 @@ def search():
                                                                                                                                                                    
 @app.route("/search", methods=['POST'])                              
 def search_post():                   
-    str = request.form['text']              
+    str = request.form['text']                 
     select = request.form['selection']                                                                                                                
     if str != "":                     
         result = finderCall(str, select)         
