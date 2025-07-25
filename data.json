@@ -28,7 +28,7 @@
           "id": "movie",
           "isSeries": false,
           "isEpisode": false,        
-          "__typename": "TitleType"       
+          "__typename": "TitleType"          
         },
         "genres": {
           "genres": [
