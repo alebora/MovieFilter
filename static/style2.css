@@ -16,7 +16,7 @@ h5{
 }   
 .row::after {
     content: "";
-    clear: both;
+    clear: both;   
     display: table;
     padding: 5px;
   } 
