@@ -19,7 +19,7 @@ def search_post():
     str = request.form['text']                      
     select = request.form['selection']                                                                                                                
     if str != "":                     
-        result = finderCall(str, select)                 
+        result = finderCall(str, select)                    
         result = [item for item in result["results"] if item['ratingsSummary']['voteCount'] > 100000]   
         if result:      
             return render_template("second.html", jsonObj = result, start = 0)
