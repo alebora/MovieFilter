@@ -14,7 +14,7 @@ Movie Filter is a project to suggest various movies/series based on the search c
 ### Installation 
 This project was created with Flask and involves the use of MoviesDatabase API and uses python, HTML, as well as CSS.        
 ```
-$ pip install Flask                           
+$ pip install Flask                              
 ```                     
     
 ### Description
