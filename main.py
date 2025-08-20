@@ -18,7 +18,7 @@ def search():
 def search_post():                   
     str = request.form['text']                             
     select = request.form['selection']                                                                                                                      
-    if str != "":                         
+    if str != "":                            
         result = finderCall(str, select)                    
         result = [item for item in result["results"] if item['ratingsSummary']['voteCount'] > 100000]   
         if result:         
