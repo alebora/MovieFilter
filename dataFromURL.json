@@ -12,7 +12,7 @@
                 "__typename": "RatingsSummary"
             },         
             "episodes": null,         
-            "primaryImage": {   
+            "primaryImage": {      
                 "id": "rm1544850432",           
                 "width": 1382,                   
                 "height": 2048,        
