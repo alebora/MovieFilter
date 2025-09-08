@@ -23,7 +23,7 @@
                 },
                 "__typename": "Image"      
             },
-            "titleType": {         
+            "titleType": {             
                 "text": "Movie",
                 "id": "movie",
                 "isSeries": false,
